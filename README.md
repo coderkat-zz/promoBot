@@ -10,3 +10,6 @@ $ env EDITOR=vim crontab -e
 
 See list of active crontab jobs:
 $ crontab -l
+
+ToDo:
+- Play with Markov chains to generate comments.

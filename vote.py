@@ -75,10 +75,9 @@ def determine_vote_needs(num_votes):
 
 others_found = determine_vote_needs(constants.num_votes)
 tries = 1
+# For now, limit the number of times we mass-upvote.
 while others_found and tries <= 10:
     tries += 1
     determine_vote_needs(constants.force_it_votes)
 else:
     print("we're number one")
-    
-
