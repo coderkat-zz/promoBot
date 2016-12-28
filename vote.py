@@ -41,8 +41,6 @@ def determine_vote_needs(num_votes):
     earliest = datetime.strptime('17:45', '%H:%M').time()
     latest = datetime.strptime('18:5', '%H:%M').time()
     if earliest < datetime.utcnow().time() < latest:
-        print(datetime.utcnow().time())
-
         upvote(num_votes, *constants.my_unique_ids)
 
     # Fetch current version of website, write to txt file
